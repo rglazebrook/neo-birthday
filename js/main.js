@@ -53,7 +53,7 @@ $(document).ready(function() {
 		
 		date = year + '-' + month + '-' + day;
 
-		$.getJSON( 'http://www.neowsapp.com/rest/v1/feed?start_date=' + date + '&end_date=' + date +'&detailed=false', switchToResults);
+		$.getJSON( '//www.neowsapp.com/rest/v1/feed?start_date=' + date + '&end_date=' + date +'&detailed=false', switchToResults);
 	});
 
 	// Bring in our content initially.
