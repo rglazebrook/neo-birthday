@@ -58,8 +58,8 @@ $(document).ready(function() {
 
 	// Bring in our content initially.
 	var tl = new TimelineMax();
-	tl.set('#earth', { display: 'block', y: '100%' });
-	tl.to('#earth', 5, { y: '0%', ease: Power2.easeOut });
+	tl.set('#earth', { display: 'block', x: '-50%', y: '100%' });
+	tl.to('#earth', 5, {x: '-50%', y: '0%', ease: Power2.easeOut });
 	tl.staggerFromTo('.stagger-in', 1, {y: '100', opacity: 0}, {y: 0, opacity: 1, ease: Power2.easeOut}, 0.5, 1 );
 
 	// Start the loading indicator spinning forever.
