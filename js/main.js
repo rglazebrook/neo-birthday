@@ -81,7 +81,7 @@ $(document).ready(function() {
 		fastestAsteroid = null;
 
 		if ( count == 0 ) {
-			// Handle no objects.
+			// TODO: Handle no objects.
 		}
 
 		else {
