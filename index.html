@@ -1,0 +1,89 @@
+---
+layout: default
+title: Birthday Surprise!
+---
+<div id="earth"></div>
+<div class="container">
+
+	<header class="text-center stagger-in">
+		<h1>Birthday Surprise!</h1>
+	</header>
+
+	<section class="intro-text text-center stagger-in">
+		<div class="row row-center">
+			<div class="col-12 col-8-tabletl col-6-desktop">
+				<p>There are more than 14,000 near-Earth objects(NEOs) &mdash; hunks of rock and ice whose orbits bring them within striking distance of Earth &mdash; in our solar system. That we <em>know</em> about, anyway.</p>
+				<p>This is obviously a pretty big number. In fact it's likely that, on your last birthday, there were one or more NEOs menacing the planet you call home. Let's find out!</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="form text-center stagger-in">
+		<div class="loading"></div>
+		<form action="" id="find">
+			<label for="month">
+				I was born on:
+			</label> 
+			<select name="month" id="month">
+			    <option selected value='01'>Janaury</option>
+			    <option value='02'>February</option>
+			    <option value='03'>March</option>
+			    <option value='04'>April</option>
+			    <option value='05'>May</option>
+			    <option value='06'>June</option>
+			    <option value='07'>July</option>
+			    <option value='08'>August</option>
+			    <option value='09'>September</option>
+			    <option value='10'>October</option>
+			    <option value='11'>November</option>
+			    <option value='12'>December</option>					
+			</select>
+			<select name="day" id="day">
+				<option selected value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<input type="hidden" name="year" id="year" value="2016">
+			<button>Find My Birthday Objects!</button>
+		</form>
+	</section>
+
+	<section class="objects-container text-center">
+
+		<h4 id="count-title">There <span id="waswere">were</span> <span id="count">0</span> known Near Earth Object<span id="plural">s</span> making an approach on your birthday last&nbsp;year.</h2>
+
+		<p>Touch/hover any of the NEOs below to learn more. Or <a href="/">click here</a> to try another date.</p>
+
+		<div id="objects" class="flex"></div>
+	</section>
+
+</div>
+<div class="tooltip_templates"></div>

@@ -1,0 +1,96 @@
+// Global styles.
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+body {
+	font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+	color: #fff;
+	background-color: #222;
+	padding-bottom: 10vh;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em;
+	font-weight: 700;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2.5rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1rem;
+}
+h6 {
+	font-size: 0.75rem;
+}
+p {
+	margin: 0;
+	+ p {
+		margin-top: 1em;
+	}
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	color: #fff;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: $gutter $gutter/2;
+	position: relative;
+	z-index: 2;
+}
+
+.fullpage {
+	display: block;
+	min-height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+.flex-col {
+	flex-direction: column;
+}
+.center {
+	margin: auto;
+}
+.v-center {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.h-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+@include for-each-size('.text-left') {
+	text-align: left;
+}
+@include for-each-size('.text-center') {
+	text-align: center;
+}
+@include for-each-size('.text-right') {
+	text-align: right;
+}
+
+.stagger-in {
+	opacity: 0;
+}

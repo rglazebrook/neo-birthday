@@ -1,0 +1,87 @@
+// Our main sass file. We may need to break this up/rename. We may not.
+
+#earth {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 150vw;
+	height: 156.36vw;
+	z-index: 1;
+	background: transparent url('../img/earth.svg') no-repeat center;
+	background-size: contain;
+}
+
+header {
+	h1 {
+		line-height: 1.2;
+	}
+}
+
+.tooltip_templates {
+	display: none;
+}
+
+.intro-text {
+	margin-top: 2rem;
+
+	@include for-tablet-portrait-up {
+		margin-top: 4rem;
+	}
+}
+
+.form {
+	margin-top: 2rem;
+	position: relative;
+
+	@include for-tablet-portrait-up {
+		margin-top: 4rem;
+	}
+
+	label {
+		display: block;
+		margin: 0 auto 0.5rem;
+
+		@include for-tablet-landscape-up {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	button {
+		display: block;
+		margin: 0.5rem auto 0;
+
+		@include for-tablet-landscape-up {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+
+.loading {
+	opacity: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+
+	border-left-color: rgba(255,255,255,0.75);
+	border-bottom-color: rgba(255,255,255,0.5);
+	border-right-color: rgba(255,255,255,0.25);
+}
+
+select, button {
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	border: 1px solid #fff;
+	padding: 5px 10px;
+	font-size: 1rem;
+	border-radius: 5px;
+}

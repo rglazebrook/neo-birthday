@@ -1,0 +1,47 @@
+
+// Easy breakpoints.
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+// A way to generate rules across breakpoint sizes. It admittedly creates a lot of CSS, 
+// but it allows us to have breakpoint-specific classes, making our code more readable.
+// This is Bootstrap's approach as well.
+@mixin for-each-size( $class ) {
+	#{$class} {
+		@content;
+	}
+	@include for-tablet-portrait-up {
+		body #{$class}-tabletp {
+			@content;
+		}
+	}
+	@include for-tablet-landscape-up {
+		body #{$class}-tabletl {
+			@content;
+		}
+	}
+	@include for-desktop-up {
+		body #{$class}-desktop {
+			@content;
+		}
+	}
+	@include for-big-desktop-up {
+		body #{$class}-big {
+			@content;
+		}
+	}
+}
+
