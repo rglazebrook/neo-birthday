@@ -1,0 +1,17 @@
+// Tooltipster overrides.
+
+body .tooltipster-base {
+	.tooltipster-content {
+		font-size: 1rem;
+		padding: 15px;
+
+		.name {
+			padding-bottom: 0.5em;
+			border-bottom: 1px solid #fff;
+		}
+
+		p + p {
+			margin-top: 0.5em;
+		}
+	}
+}
