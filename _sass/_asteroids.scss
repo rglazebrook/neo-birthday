@@ -19,6 +19,21 @@
 	width: 48%;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+
+	// An outline to help see the tiniest asteroids.
+	&:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 50%;
+		padding-bottom: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 100%;
+		border: 1px solid rgba(0,200,0,0.3);
+		pointer-events: none;
+	}
 
 	@include for-tablet-landscape-up {
 		flex: 0 0 30%;
@@ -31,5 +46,7 @@
 		width: 100%;
 		padding-bottom: 100%;
 		cursor: pointer;
+		position: relative;
+
 	}
 }
