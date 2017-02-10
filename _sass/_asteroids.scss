@@ -5,17 +5,18 @@
 }
 
 #objects {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	// display: flex;
+	// flex-wrap: wrap;
+	// justify-content: space-around;
 	width: 100%;
 	padding: 15px 0;
+	text-align: center;
 }
 
 .object {
-	display: flex;
-	flex: 0 0 48%;
+	display: inline-block;
 	width: 48%;
+	margin: auto;
 	align-items: center;
 	justify-content: center;
 	position: relative;
@@ -35,7 +36,6 @@
 	}
 
 	@include for-tablet-landscape-up {
-		flex: 0 0 30%;
 		width: 30%;
 	}
 
